@@ -33,7 +33,7 @@ class NewPostComponent extends Component {
         return (
             <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
                 <Field name="title" label="Title" component={this.renderField}/>
-                <Field name="categories" label="Tags" component={this.renderField}/>
+                <Field name="tags" label="Tags" component={this.renderField}/>
                 <Field name="content" label="Content" component={this.renderField}/>
 
                 <button type="submit" className="btn btn-primary">Submit</button>
