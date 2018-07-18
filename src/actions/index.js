@@ -1,11 +1,10 @@
 import axios from 'axios';
+import {ROOT} from "../conf/main.conf";
 
 export const FETCH_POSTS = 'FETCH_POSTS';
 export const FETCH_POST = 'FETCH_POST';
 export const CREATE_POST = 'CREATE_POST';
 export const DELETE_POST = 'DELETE_POST';
-
-const ROOT = 'http://localhost:4000/api/v1';
 
 export function fetchPosts() {
     const request = axios.get(`${ROOT}/posts`);
